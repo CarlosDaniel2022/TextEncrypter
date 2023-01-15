@@ -15,6 +15,55 @@ textarea#encrypt{
     height: calc(80vh - 5.3125rem);
 }
 
+.btn:hover{
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: var(--color-7);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: var(--color-2);
+    width: 0%;
+    transition: width 500ms ease-in-out;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -ms-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+.btn.contrast:hover{
+    color: var(--color-2);
+}
+
+.btn.contrast::before{
+    background-color: var(--color-7);
+    transition: width 500ms ease-in-out;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -ms-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+}
+
+.btn.contrast:hover::before{
+    width: 100%;
+}
+
 #copy-region{
     flex: calc(100% / 3);
     border-radius: 1.25rem;

@@ -149,38 +149,6 @@ section#encrypt-btns{
     -o-transition: color,font-size, 500ms ease-in-out;
 }
 
-.btn:hover{
-    cursor: pointer;
-    font-size: 0.85rem;
-    color: var(--color-7);
-}
-
-.btn::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    background-color: var(--color-2);
-    width: 0%;
-    transition: width 500ms ease-in-out;
-    -webkit-transition: width 500ms ease-in-out;
-    -moz-transition: width 500ms ease-in-out;
-    -ms-transition: width 500ms ease-in-out;
-    -o-transition: width 500ms ease-in-out;
-}
-
-.btn:hover::before{
-    width: 100%;
-}
-
 .btn.contrast{
     background-color: var(--color-2);
     color: var(--color-7);
@@ -189,23 +157,6 @@ section#encrypt-btns{
     -moz-transition: color 500ms ease-in-out;
     -ms-transition: color 500ms ease-in-out;
     -o-transition: color 500ms ease-in-out;
-}
-
-.btn.contrast:hover{
-    color: var(--color-2);
-}
-
-.btn.contrast::before{
-    background-color: var(--color-7);
-    transition: width 500ms ease-in-out;
-    -webkit-transition: width 500ms ease-in-out;
-    -moz-transition: width 500ms ease-in-out;
-    -ms-transition: width 500ms ease-in-out;
-    -o-transition: width 500ms ease-in-out;
-}
-
-.btn.contrast:hover::before{
-    width: 100%;
 }
 
 aside#copy-region{
