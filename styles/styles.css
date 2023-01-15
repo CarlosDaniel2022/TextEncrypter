@@ -204,7 +204,7 @@ p#copy-paragraph{
     margin-top: 0.5rem;
     color: var(--color-7);
     max-width: 100%;
-    text-align: justify;
+    text-align: center;
 }
 
 .btn.hidden{
