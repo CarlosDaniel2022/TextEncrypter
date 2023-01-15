@@ -12,7 +12,7 @@ const enableCopy = () => {
 };
 
 const clearContent = () => {
-  if (texto.value) {
+  if (copyParagraph.innerText !== "Ingresa el texto que desees encriptar o desencriptar.") {
     texto.value = "";
     copyParagraph.innerText =
       "Ingresa el texto que desees encriptar o desencriptar.";
