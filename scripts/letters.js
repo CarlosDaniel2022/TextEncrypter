@@ -1,6 +1,6 @@
 const texto = document.querySelector("#encrypt");
 
-const soloLetrasMinusculas = (evento) => {
+const soloLetrasMinusculas = evento => {
   var ASCIICode = evento.which ? evento.which : evento.keyCode;
   if (ASCIICode < 33 || (ASCIICode >= 97 && ASCIICode <= 122)) return true;
   return false;

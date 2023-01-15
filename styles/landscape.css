@@ -8,7 +8,7 @@ form#encrypt-form{
 
 #encrypt-region{
     padding: var(--padding-md);
-    flex: calc(200% / 3);
+    width: calc(200% / 3);
 }
 
 textarea#encrypt{
@@ -65,7 +65,7 @@ textarea#encrypt{
 }
 
 #copy-region{
-    flex: calc(100% / 3);
+    width: calc(100% / 3);
     border-radius: 1.25rem;
     border: 0.1rem solid var(--color-8);
     -webkit-border-radius: 1.25rem;
