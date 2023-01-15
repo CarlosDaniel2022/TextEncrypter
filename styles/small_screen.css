@@ -1,0 +1,12 @@
+pre:not(#divider){
+    display: none;
+}
+
+#divider{
+    height: 0.5rem;
+}
+
+.social-media{
+    display: block;
+    margin: 0.5rem auto 0;
+}

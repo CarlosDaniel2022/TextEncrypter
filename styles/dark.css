@@ -1,0 +1,14 @@
+:root{
+    --color-1: #31231E;
+    --color-2: #483B31;
+    --color-3: #5e5543;
+    --color-4: #746F55; 
+    --color-5: #8A8967;
+    --color-6: #A0A379;
+    --color-7: #B6BD8B;
+    --color-8: #CCD79D;
+    --color-9: #E2F1AF;
+    --alura-filter: brightness(0) saturate(100%) invert(94%) sepia(27%) saturate(423%) hue-rotate(14deg) brightness(99%) contrast(92%);
+    --social-media-filter: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(3194%) hue-rotate(330deg) brightness(93%) contrast(85%);
+    --diamond-filter: brightness(100%);
+}

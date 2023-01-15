@@ -1,0 +1,9 @@
+#encrypt-btns{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn:not(.hidden){
+    width: calc(100% - 1rem);
+}

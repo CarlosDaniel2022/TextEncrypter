@@ -1,0 +1,40 @@
+form#encrypt-form{
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+}
+
+#encrypt-region{
+    padding: var(--padding-md);
+    flex: calc(200% / 3);
+}
+
+textarea#encrypt{
+    height: calc(80vh - 5.3125rem);
+}
+
+#copy-region{
+    flex: calc(100% / 3);
+    border-radius: 1.25rem;
+    border: 0.1rem solid var(--color-8);
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+}
+
+section#copy-info{
+    height: 80vh;
+}
+
+h2#copy-title{
+    margin: 1rem 0 0.5rem 0;
+}
+
+img#lookingFor{
+    width: 80%;
+    filter: sepia(100%) var(--diamond-filter);
+    -webkit-filter: sepia(100%) var(--diamond-filter);
+}

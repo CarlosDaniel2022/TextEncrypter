@@ -1,0 +1,42 @@
+form#encrypt-form{
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+article#encrypt-region, aside#copy-region{
+    width: 100%;
+}
+
+textarea#encrypt{
+    height: 26vh;
+}
+
+section#copy-info{
+    height: 26vh;
+}
+
+h2#copy-title{
+    margin-bottom: 0.5rem;
+}
+
+#encrypt-form #copy-region #copy-info img#lookingFor{
+    display: none;
+}
+
+pre#divider{
+    height: 0.5rem;
+}
+
+pre:not(#divider){
+    display: none;
+}
+
+div.social-media{
+    display: block;
+    margin: 0.5rem auto 0;
+}

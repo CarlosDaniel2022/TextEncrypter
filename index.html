@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="./styles/light.css"/>
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./styles/dark.css"/>
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="./styles/portrait.css"/>
+    <link rel="stylesheet" media="screen and (orientation: portrait) and (max-width: 480px)" href="./styles/smartphone.css"/>
+    <link rel="stylesheet" media="screen and (orientation: portrait) and (min-width: 481px)" href="./styles/tablet.css"/>
+    <link rel="stylesheet" media="screen and (orientation: landscape)" href="./styles/landscape.css"/>
+    <link rel="stylesheet" media="screen and (orientation: landscape) and (min-width: 713px)" href="./styles/big_screen.css"/>
+    <link rel="stylesheet" media="screen and (orientation: landscape) and (max-width: 712px)" href="./styles/small_screen.css"/>
+    <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs" defer></script>
+  </head>
+  <body>
+    <main>
+      <form id="encrypt-form" name="encrypt-form">
+        <article id="encrypt-region">
+          <header id="encrypt-header">
+            <img src="./res/Logo@2x.png" id="logo" alt="Logo de Alura Latam" />
+            <img src="./res/clear.png" id="clear" name="clear" alt="Clean icons created by Smashicons - Flaticon">
+            <dark-mode-toggle
+              id="dark-mode-toggle"
+              appearance="toggle"
+              remember
+            ></dark-mode-toggle>
+          </header>
+          <fieldset id="encrypt-fieldset" name="encrypt-fieldset">
+            <textarea
+              name="encrypt"
+              id="encrypt"
+              cols="30"
+              rows="10"
+              value="encrypt-text"
+              pattern="[a-z]"
+              placeholder="Ingrese el texto aquí"
+            ></textarea>
+            <section id="encrypt-warn">
+              <img src="./res/info.svg" id="info-icon" alt="Information Icon"/>
+              <p id="encrypt-paragraph">Solo letras minúsculas y sin acentos</p>
+            </section>
+            <section id="encrypt-btns">
+              <button type="button" class="btn" id="encrypt-btn" name="encrypt-btn" value="encrypt">¡Encriptar!</button>
+              <button type="button" id="decrypt-btn" name="decrypt-btn" class="btn contrast" value="decrypt">¡Desencriptar!</button>
+            </section>
+          </fieldset>
+        </article>
+        <aside id="copy-region" class="change">
+            <section id="copy-info">
+              <img src="./res/Muñeco.png" id="lookingFor" name="lookingFor" class="change" alt="Looking for a diamond">
+              <h2 id="copy-title" class="change">No se ha recibido ningún texto para procesar</h2>
+              <p id="copy-paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </section>
+            <button type="button" class="btn hidden change" id="copy-btn" name="copy-btn" value="copy">¡Copiar!</button>
+        </aside>
+      </form>
+    </main>
+    <footer id="contact-info">
+        <span class="bold">Autor:</span><pre> </pre><span> Carlos Daniel Conchas Ortíz</span><pre id="divider"></pre><span class="bold">Contacto:</span><pre> </pre><span> carlosdanielconchasortiz@gmail.com</span>
+        <div id="social-media-info">
+          <a href="https://www.linkedin.com/in/carlosdanielconchasortiz/" target="_blank" id="LinkedIn-link"><div id="LinkedIn" class="social-media"><img src="./res/LinkedInWeb.png" alt="LinkedIn logo"></div></a>
+          <a href="https://twitter.com/carlosprog2022" target="_blank" id="Twitter-link"><div id="Twitter" class="social-media"><img src="./res/TwitterWeb.png" alt="Twitter logo"></div></a>
+          <a href="#" target="_blank" id="GitHub-link"><div id="GitHub" class="social-media"><img src="./res/GitHubWeb.png" alt="GitHub logo"></div></a>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/letters.js" defer></script>
+    <script src="./scripts/change.js" defer></script>
+  </body>
+</html>
